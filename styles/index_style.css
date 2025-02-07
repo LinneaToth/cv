@@ -1,4 +1,4 @@
-/* styles that are specific for the landing page */
+/*styles that are specific for the landing page
 
 #portrait {
     background-image: url("../img/portrait_.jpg");
@@ -13,7 +13,7 @@
 #profile-text {
     grid-column: 7/-2;
     grid-row: 2/span 1;
-    /* box-shadow: 5px 5px 10px var(--shadow-color); */
+   //box-shadow: 5px 5px 10px var(--shadow-color); 
     padding: 1rem;
     align-self: stretch;
 }
@@ -56,8 +56,8 @@
 
 .project-card {
     flex: 1;
-    /* height: 200px; */
-    /* background-color: teal; */
+    // height: 200px; 
+    // background-color: teal;
     filter: saturate(70%);
     background-repeat: no-repeat;
     background-size: cover;
@@ -107,4 +107,4 @@
 .project-card p:hover {
     padding-right: 1.5rem;
     cursor: pointer;
-}
+} */
