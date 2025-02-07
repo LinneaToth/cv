@@ -1,0 +1,9 @@
+/* for css only used on the contact-page */
+
+
+
+#contact {
+    width: calc(100% - 500px - 1rem);
+    padding-left: 1rem;
+    border: 1px solid red;
+}

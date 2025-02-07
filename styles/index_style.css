@@ -1,0 +1,110 @@
+/* styles that are specific for the landing page */
+
+#portrait {
+    background-image: url("../img/portrait_.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 2/7;
+    grid-row: 2/span 1;
+    box-shadow: 0 10px 10px var(--shadow-color);
+}
+
+#profile-text {
+    grid-column: 7/-2;
+    grid-row: 2/span 1;
+    /* box-shadow: 5px 5px 10px var(--shadow-color); */
+    padding: 1rem;
+    align-self: stretch;
+}
+
+#profile-text p {
+    margin-top: 1rem;
+}
+
+.link {
+    font-weight: bold;
+    text-align: end;
+}
+
+.link a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition-duration: 0.2s;
+}
+
+.link a:hover {
+    padding-right: 0.5rem;
+    cursor: pointer;
+}
+
+
+.link a:visited {
+    color: var(--text-color);
+}
+
+
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap-width);
+    grid-column: 2/-2;
+    grid-row: 4/span 1;
+    padding-bottom: 10px;
+}
+
+.project-card {
+    flex: 1;
+    /* height: 200px; */
+    /* background-color: teal; */
+    filter: saturate(70%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    transition-timing-function: ease-in-out;
+    text-align: right;
+}
+
+.project-card h3 {
+    margin: 1rem auto auto 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+}
+
+.project-card:nth-child(1) {
+    background-image: url("../img/mockup1.png");
+}
+
+.project-card:nth-child(2) {
+    background-image: url("../img/mockup_vector.jpg");
+}
+
+.project-card:nth-child(3) {
+    background-image: url("../img/sketch.png");
+}
+
+.project-card:nth-child(4) {
+    background-image: url("../img/mockup_logo.jpg");
+}
+
+.project-card:hover {
+    filter: none;
+    transition-duration: 0.2s;
+}
+
+.project-card p {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0;
+    font-weight: bold;
+    transition-duration: 0.2s;
+}
+
+.project-card p:hover {
+    padding-right: 1.5rem;
+    cursor: pointer;
+}
