@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F25D-Uppgift 2 - Skapa CV-sida - Contact</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/contact_style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/contact_style.css">
     <!-- fonts: -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,18 +17,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- script for navbar: -->
+    <script src="script/script.js" defer> </script>
 </head>
 
 <body>
     <header>
         <h1 id="title"><abbr title="Linnéa Toth">LT</abbr></h1>
         <nav>
-            <ul id="menu">
+            <ul id="menu" class="hidden">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="cv.html">Experience &amp; education</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
             </ul>
+            <i class="menu-toggle-btn fa-solid fa-bars"> </i>
         </nav>
     </header>
 
@@ -38,7 +41,7 @@
         <figure id="map">
             <iframe title="Map showing Scania county"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1148921.6701979346!2d12.089474719431259!3d55.77608656151625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464d783fe43b503f%3A0xbd47a217e2b7f0e1!2sSk%C3%A5ne%20County!5e0!3m2!1sen!2sse!4v1738652963566!5m2!1sen!2sse"
-                width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                style="border:0;" allowfullscreen="" loading="lazy" height="300px" width="300px"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </figure>
 
@@ -49,6 +52,14 @@
             <p>12345 Skånsk stad
             </p>
         </article>
+
+        <!-- <article id="references">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptate sit ipsam ut, iure, voluptas,
+                odit quibusdam dolorum maiores nostrum recusandae. Ipsa quos sit consequatur fugit eaque. Sint,
+                voluptatem architecto.</p>
+
+            <p>// Happy customer</p>
+        </article> -->
 
     </main>
     <footer>

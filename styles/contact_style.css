@@ -1,0 +1,79 @@
+/* Styles specific for the contact page */
+
+body {
+    grid-template-rows: 4rem 1fr 5rem;
+}
+
+
+#map,
+#contact {
+    margin-top: 2rem;
+    align-self: start;
+    height: 100%;
+    min-width: 300px;
+}
+
+#contact {
+    margin-left: var(--gap-width);
+}
+
+
+
+/* #references {
+    text-align: center;
+    font-style: italic;
+    margin: 0 20%;
+} */
+
+@media screen and (max-width: 599px) {
+
+
+
+    #map,
+    #contact {
+        width: 100%;
+        height: auto;
+    }
+
+    #contact {
+        order: 1;
+    }
+
+    #map {
+        order: 2;
+    }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+
+    #map,
+    #contact {
+        width: 100%;
+        height: auto;
+    }
+
+    #contact {
+        order: 1;
+    }
+
+    #map {
+        order: 2;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1149px) {
+
+    #contact {
+        width: calc(100% - 500px);
+        padding-left: 0;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    #contact {
+        width: calc(100% - 500px - 1rem);
+        padding-left: 1rem;
+    }
+}

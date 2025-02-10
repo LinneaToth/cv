@@ -1,0 +1,26 @@
+/* Styles specific for the cv page */
+
+body {
+    grid-template-rows: 4rem 1fr 5rem;
+}
+
+.duration {
+    width: 25%;
+    padding-top: 2rem;
+}
+
+.experience {
+    width: 75%;
+    padding-top: 2rem;
+}
+
+/* responsive layout below */
+
+@media screen and (max-width: 599px) {}
+
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 1149px) {}
+
+@media screen and (min-width: 1150px) {}

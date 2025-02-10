@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F25D-Uppgift 2 - Skapa CV-sida</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/portfolio_style.css">
 
     <!-- fonts: -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,26 +18,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- script for navbar: -->
+    <script src="script/script.js" defer> </script>
 </head>
 
 <body>
     <header>
         <h1 id="title"><abbr title="Linnéa Toth">LT</abbr></h1>
         <nav>
-            <ul id="menu">
+            <ul id="menu" class="hidden">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="cv.html">Experience &amp; education</a></li>
                 <li class="active"><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <i class="menu-toggle-btn fa-solid fa-bars"> </i>
         </nav>
     </header>
 
     <main class="container">
-        <h2>Project portfolio</h2>
+        <h2 class="heading">Project portfolio</h2>
 
         <article class="portfolio-item" id="loginpage">
-            <img src="img/mockup1.png">
+            <img src="./img/mockup1.png">
             <section>
                 <h3>Log in page</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, illo saepe? Amet sapiente, magni maiores
@@ -45,30 +49,30 @@
             </section>
         </article>
 
-        <article class="portfolio-item" id="loginpage">
-            <img src="img/mockup1.png">
+        <article class="portfolio-item" id="vector_graphic">
+            <img src="./img/mockup_vector.jpg">
             <section>
-                <h3>Log in page</h3>
+                <h3>Vector graphic</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, illo saepe? Amet sapiente, magni maiores
                     quibusdam nam alias, quas, minus in nostrum soluta id doloremque velit inventore eum fugit
                     consequatur.</p>
             </section>
         </article>
 
-        <article class="portfolio-item" id="loginpage">
-            <img src="img/mockup1.png">
+        <article class="portfolio-item" id="sketch">
+            <img src="./img/sketch.png">
             <section>
-                <h3>Log in page</h3>
+                <h3>Sketch</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, illo saepe? Amet sapiente, magni maiores
                     quibusdam nam alias, quas, minus in nostrum soluta id doloremque velit inventore eum fugit
                     consequatur.</p>
             </section>
         </article>
 
-        <article class="portfolio-item" id="loginpage">
-            <img src="img/mockup1.png">
+        <article class="portfolio-item" id="logotype">
+            <img src="./img/mockup_logo.jpg">
             <section>
-                <h3>Log in page</h3>
+                <h3>Logo</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, illo saepe? Amet sapiente, magni maiores
                     quibusdam nam alias, quas, minus in nostrum soluta id doloremque velit inventore eum fugit
                     consequatur.</p>
