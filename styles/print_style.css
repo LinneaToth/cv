@@ -1,0 +1,18 @@
+@media print {
+    /* the visitor will need to allow for background images to be printed, manually, in their printing dialogue. The style removes header and footer, and makes the background white and all text black. */
+
+    * {
+        color: black;
+    }
+
+
+    header,
+    footer,
+    nav {
+        display: none !important;
+    }
+
+    body {
+        background-color: white;
+    }
+}

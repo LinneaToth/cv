@@ -5,26 +5,34 @@
 :root {
     --pop-accent-color: #000000;
     --active-color: var(--pop-accent-color);
-    /* --active-color: #3f34a1; */
-    --header-color: #000;
+    --header-footer-color: #FFF;
     --text-color: #2c2c2c;
     --shadow-color: #f3f3f3;
     --main-background-color: rgb(255, 255, 255);
-    --main-background-color-a: rgba(255, 255, 255, 0.9);
+    --main-background-color-a: rgba(255, 255, 255, 0.97);
     --secondary-background-color: #DDD;
     --gap-width: 20px;
+    /* Color text against background controlled for accessibility, contrast ratio 13.96:1, WCAG AAA PASS */
 }
 
+
+
 @media (prefers-color-scheme: dark) {
+
+    /* Changes the color scheme of the site, if the visitor has dark mode on */
     :root {
-        /* color: #161823; darker (shadow on header and footer)
-        color: #1B1E2B; dark (header and footer) 
-        color: #292D3E; less dark; (main window) 
-        font-color: #BABED8; gray-blue-ish 
-        /* --pop-accent-color: 
-        --text-color:
-        --secondary-background-color: */
+        --pop-accent-color: #BABED8;
+        --active-color: var(--pop-accent-color);
+        --header-footer-color: #1B1E2B;
+        --text-color: #BABED8;
+        --shadow-color: #161823;
+        --main-background-color: #292D3E;
+        --main-background-color-a: rgba(41, 45, 62, 0.85);
+        --secondary-background-color: #292D3E;
+        --gap-width: 20px;
+        /* Color text against background controlled for accessibility, contrast ratio 7.43:1, WCAG AAA PASS */
     }
+
 }
 
 /* reset and global styling */
@@ -36,13 +44,14 @@
 }
 
 body {
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 10px repeat(10, 1fr) 10px;
     grid-template-rows: 4rem 1fr 2rem 1fr 5rem;
     gap: var(--gap-width);
     background-color: var(--main-background-color);
     font-family: "Quicksand", serif;
-    min-height: 100vh;
+    color: var(--text-color);
 }
 
 
@@ -53,6 +62,7 @@ h2,
 h3,
 h4 {
     font-family: "Cormorant Garamond", serif;
+    font-weight: 200;
 }
 
 h1 {
@@ -60,11 +70,11 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
@@ -72,6 +82,7 @@ p {
     line-height: 1.5;
     padding-bottom: 1rem;
     font-weight: lighter;
+    color: var(--text-color);
 }
 
 a {
@@ -92,12 +103,12 @@ header {
     font-size: 1.5rem;
     grid-column: 1/-1;
     grid-row: 1/span 1;
-    background-color: var(--main-background-color);
+    background-color: var(--header-footer-color);
     color: var(--header-color);
     margin-bottom: 10px;
     box-shadow: 0px 5px 10px var(--shadow-color);
+    display: flex;
 }
-
 
 abbr {
     border-bottom: none;
@@ -109,6 +120,9 @@ nav {
     display: inline;
 }
 
+#title {
+    align-self: center;
+}
 
 #menu {
     height: 100%;
@@ -129,7 +143,6 @@ nav {
     text-decoration: var(--pop-accent-color) underline;
     text-decoration-thickness: 1.2px;
 }
-
 
 #menu li a {
     text-decoration: none;
@@ -196,7 +209,7 @@ nav {
 footer {
     grid-column: 1/span 12;
     grid-row: -1/-2;
-    background-color: var(--main-background-color);
+    background-color: var(--header-footer-color);
     text-align: center;
     align-content: center;
     box-shadow: 0px 5px 10px var(--shadow-color) inset;
@@ -227,7 +240,7 @@ footer i:hover {
     }
 
     #title {
-        display: none;
+        margin-left: var(--gap-width)
     }
 
     header {
