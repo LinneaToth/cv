@@ -17,11 +17,14 @@ body {
 
 /* responsive layout below */
 
-@media screen and (max-width: 599px) {}
+@media screen and (max-width: 599px) {
+    .duration {
+        padding-right: var(--gap-width);
+    }
 
 
-@media only screen and (min-width: 600px) and (max-width: 767px) {}
+    @media only screen and (min-width: 600px) and (max-width: 767px) {}
 
-@media only screen and (min-width: 768px) and (max-width: 1149px) {}
+    @media only screen and (min-width: 768px) and (max-width: 1249px) {}
 
-@media screen and (min-width: 1150px) {}
+    @media screen and (min-width: 1250px) {}

@@ -74,7 +74,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     margin-bottom: 1rem;
 }
 
@@ -256,7 +256,7 @@ footer i:hover {
     }
 
     footer {
-        grid-row: -1/span 1;
+        grid-row: -1/-2;
         grid-column: 1/span 1;
     }
 
@@ -306,13 +306,13 @@ footer i:hover {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1149px) {
+@media only screen and (min-width: 768px) and (max-width: 1249px) {
     #title {
         margin-left: calc(var(--gap-width) + 10px);
     }
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1250px) {
     body {
         width: 100vw;
         grid-template-columns: 20% repeat(10, calc((60% - 220px) / 10)) 20%;

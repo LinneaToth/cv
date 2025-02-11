@@ -63,7 +63,7 @@ body {
 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1149px) {
+@media only screen and (min-width: 768px) and (max-width: 1249px) {
 
     #contact {
         width: calc(100% - 500px);
@@ -71,7 +71,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1250px) {
     #contact {
         width: calc(100% - 500px - 1rem);
         padding-left: 1rem;
