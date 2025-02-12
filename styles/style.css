@@ -231,7 +231,7 @@ footer i:hover {
 
 /* responsive layout below */
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 619px) {
     body {
         width: 100vw;
         grid-template-columns: 100%;
@@ -301,7 +301,7 @@ footer i:hover {
 }
 
 
-@media only screen and (min-width: 600px) and (max-width: 767px) {
+@media only screen and (min-width: 620px) and (max-width: 767px) {
     #title {
         margin-left: calc(var(--gap-width) + 10px);
     }

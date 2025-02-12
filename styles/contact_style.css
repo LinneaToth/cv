@@ -25,7 +25,7 @@ body {
     margin: 0 20%;
 } */
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 619px) {
 
 
 
@@ -45,7 +45,7 @@ body {
 }
 
 
-@media only screen and (min-width: 600px) and (max-width: 767px) {
+@media only screen and (min-width: 620px) and (max-width: 767px) {
 
     #map,
     #contact {

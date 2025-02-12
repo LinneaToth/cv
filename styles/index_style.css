@@ -100,7 +100,7 @@
 /* responsive layout below */
 
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 619px) {
     body {
         grid-template-rows: 4rem auto auto auto auto 5rem;
     }
@@ -146,7 +146,7 @@
 }
 
 
-@media only screen and (min-width: 600px) and (max-width: 767px) {
+@media only screen and (min-width: 620px) and (max-width: 767px) {
 
     body {
         grid-template-rows: 4rem auto 2rem auto 5rem;
