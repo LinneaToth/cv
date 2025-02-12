@@ -10,7 +10,8 @@
     --shadow-color: #f3f3f3;
     --main-background-color: rgb(255, 255, 255);
     --main-background-color-a: rgba(255, 255, 255, 0.97);
-    --secondary-background-color: #DDD;
+    --secondary-background-color: #ffffff;
+    /* --secondary-background-color: #DDD; */
     --gap-width: 20px;
     /* Color text against background controlled for accessibility, contrast ratio 13.96:1, WCAG AAA PASS */
 }
@@ -28,7 +29,7 @@
         --shadow-color: #161823;
         --main-background-color: #292D3E;
         --main-background-color-a: rgba(41, 45, 62, 0.85);
-        --secondary-background-color: #292D3E;
+        --secondary-background-color: #1B1E2B;
         --gap-width: 20px;
         /* Color text against background controlled for accessibility, contrast ratio 7.43:1, WCAG AAA PASS */
     }
@@ -172,14 +173,14 @@ nav {
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
-    grid-column: 2/span 10;
-    grid-row: 2/span 1;
-    align-content: start;
     padding-top: 1rem;
     min-height: 100%;
+    grid-column: 2/span 10;
+    grid-row: 2/span 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
 }
 
 .container h2 {
