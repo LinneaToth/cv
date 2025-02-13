@@ -8,7 +8,6 @@
     --main-background-color: rgb(255, 255, 255);
     --main-background-color-a: rgba(255, 255, 255, 0.97);
     --secondary-background-color: #ffffff;
-    /* --secondary-background-color: #DDD; */
     --gap-width: 20px;
     /* Color text against background controlled for accessibility, contrast ratio 13.96:1, WCAG AAA PASS */
 }
@@ -25,7 +24,6 @@
         --main-background-color: #292D3E;
         --main-background-color-a: rgba(41, 45, 62, 0.85);
         --secondary-background-color: #1B1E2B;
-        --gap-width: 20px;
         /* Color text against background controlled for accessibility, contrast ratio 7.43:1, WCAG AAA PASS */
     }
 }
@@ -310,8 +308,7 @@ footer i:hover {
         gap: var(--gap-width);
     }
 
-    h1,
-    h1 #title {
+    #title {
         margin-left: calc(20% + var(--gap-width));
         padding-left: 0;
     }
