@@ -1,7 +1,4 @@
-/*Universal styling for all pages*/
-
-/* CLAMP function sets min preferred and max value!  */
-
+/* reset and global styling */
 :root {
     --pop-accent-color: #000000;
     --active-color: var(--pop-accent-color);
@@ -15,8 +12,6 @@
     --gap-width: 20px;
     /* Color text against background controlled for accessibility, contrast ratio 13.96:1, WCAG AAA PASS */
 }
-
-
 
 @media (prefers-color-scheme: dark) {
 
@@ -33,10 +28,7 @@
         --gap-width: 20px;
         /* Color text against background controlled for accessibility, contrast ratio 7.43:1, WCAG AAA PASS */
     }
-
 }
-
-/* reset and global styling */
 
 * {
     box-sizing: border-box;
@@ -54,7 +46,6 @@ body {
     font-family: "Quicksand", serif;
     color: var(--text-color);
 }
-
 
 /*general text styling below*/
 
@@ -95,9 +86,7 @@ a:visited {
     color: var(--text-color);
 }
 
-
 /*header and navigation below*/
-
 
 header {
     font-family: "Cormorant Garamond", serif;
@@ -154,6 +143,7 @@ nav {
     color: var(--text-color)
 }
 
+/* the menu button is hidden by default, but will show up when the screen goes small */
 .menu-toggle-btn {
     visibility: hidden;
 }
@@ -224,7 +214,6 @@ footer i a:visited {
 }
 
 footer i:hover {
-    /* color: var(--pop-accent-color); */
     filter: invert(30%);
 }
 
@@ -277,6 +266,7 @@ footer i:hover {
         display: none !important;
     }
 
+    /* .static makes the site "freeze" underneath the menu when applied to body */
     .static {
         overflow: hidden;
     }

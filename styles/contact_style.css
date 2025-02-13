@@ -4,7 +4,6 @@ body {
     grid-template-rows: 4rem 1fr 5rem;
 }
 
-
 #map,
 #contact {
     margin-top: 2rem;
@@ -17,16 +16,7 @@ body {
     margin-left: var(--gap-width);
 }
 
-
-
-/* #references {
-    text-align: center;
-    font-style: italic;
-    margin: 0 20%;
-} */
-
 @media screen and (max-width: 600px) {
-
 
 
     #map,
@@ -35,6 +25,7 @@ body {
         height: auto;
     }
 
+    /*the specified order makes the appearance order of the map and text switch when on a narrower screen*/
     #contact {
         order: 1;
     }
