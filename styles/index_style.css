@@ -21,7 +21,6 @@
     grid-column: 7/-2;
     grid-row: 2/span 1;
     padding: 1rem;
-
     max-height: 40vh;
 }
 
@@ -126,6 +125,7 @@
         grid-column: 1/span 1;
         min-height: 250px;
         margin: 0 var(--gap-width);
+        ¨
     }
 
     #profile-text {
@@ -150,6 +150,11 @@
 
     body {
         grid-template-rows: 4rem auto 2rem auto 5rem;
+    }
+
+    #portrait,
+    #profile-text {
+        max-height: 60vh;
     }
 
     .project-card {
