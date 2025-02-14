@@ -12,7 +12,7 @@ The layout was a pre-defined prerequisite in the task we were given, as were the
 - Dark mode
 - W3C validated
 - Semantic markup
-- Print css
+- Print CSS
 
 ## Technologies used
 - HTML 5
