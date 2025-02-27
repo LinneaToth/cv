@@ -16,6 +16,15 @@ body {
     padding-top: 2rem;
 }
 
+#work-experience,
+#edu-experience {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    width: 100%;
+}
+
+
 /* responsive layout below */
 
 @media only screen and (max-width: 500px) {

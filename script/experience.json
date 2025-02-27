@@ -1,0 +1,56 @@
+[
+  {
+    "type": "work",
+    "duration": "2021-",
+    "title": "Liro IT AB // Co-founder",
+    "description": "My ongoing transition from architect to web developer is a pursuit of a nearly life-long dream of coding. My partner and I co-founded LIRO IT AB a few years ago. While he, a seasoned computer engineer, has been focusing on consulting, my role involves expanding the company's scope with my experience and the skill set I am currently acquiring through my studies."
+  },
+  {
+    "type": "work",
+    "duration": "2019-2024",
+    "title": "Ängelholms kommun // Cultural Heritage Strategist, building permits",
+    "description": "During my years at Ängelholm Municipality, I played a central role in cultural heritage work, most recently as a Cultural Heritage Strategist. I have handled cases, coordinated building permit matters in complex projects, and participated in budget work and development projects. My role has often been leading, educational, and developmental."
+  },
+  {
+    "type": "work",
+    "duration": "2018-2019",
+    "title": "Lloyd's arkitektkontor AB // Architect",
+    "description": "As an employee at a small architectural firm, you need to be quick to switch between various tasks. Whether it's designing parking structures or urban greenery, detailing a private villa, procuring, managing, or ordering IT products or services, the key is flexibility!"
+  },
+  {
+    "type": "work",
+    "duration": "2016-2020",
+    "title": "One-man-Business // Designer",
+    "description": "As a platform for my own illustration and design projects, whether graphic or architectural, I started a sole proprietorship in 2016."
+  },
+  {
+    "type": "work",
+    "duration": "2015-2018",
+    "title": "Tillberg Design AB // Architect",
+    "description": "As an architect at Tillberg Design in Höganäs, I worked with international clients and in international workgroups. I was architect of specific areas on cruise ships. I was responsible for CAD training within the company, and a key person in developing a new CAD standard. During my time at Tillberg, I was trained to work conceptually, plan projects and to work in teams."
+  },
+  {
+    "type": "work",
+    "duration": "2005-2014",
+    "title": "Europakontoret i Skåne AB",
+    "description": "With my parents at the helm, Europakontoret was a family business with a wide range of activities. The small format was characterized by the need for constant ad hoc solutions and adaptability to various roles and tasks."
+  },
+  {
+    "type": "work",
+    "duration": "2009, 2011-2012",
+    "title": "Karin Petterssons Arkitektbyrå, Inter IKEA Systems Service AB",
+    "description": "The internships at IKEA's department of architecture and with a local architectural firm were my first acquaintances with life as an architect."
+  },
+  {
+    "type": "education",
+    "duration": "2025 - ongoing",
+    "title": "Yrkeshögskolan i Borås",
+    "description": "Front End / Web dev student!"
+  },
+  {
+    "type": "education",
+    "duration": "2007 - 2013",
+    "title": "Lund University",
+    "description": "M.Arch. "
+  }
+]
