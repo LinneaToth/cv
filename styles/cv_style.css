@@ -25,6 +25,20 @@ body {
 }
 
 
+/* Responsive media query code for small screens */
+@media (max-width: 768px) {
+    .card-wrapper {
+        margin: 0 10px 25px;
+    }
+
+    .card-wrapper .swiper-slide-button {
+        display: none;
+    }
+}
+
+
+
+
 /* responsive layout below */
 
 @media only screen and (max-width: 500px) {

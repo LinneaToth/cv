@@ -21,6 +21,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- script for navbar: -->
     <script src="script/script.js" defer> </script>
+    <script src="script/portfolio.js" defer> </script>
 </head>
 
 <body>
@@ -37,68 +38,88 @@
         <i class="menu-toggle-btn fa-solid fa-bars" title="Menu icon"> </i>
     </header>
 
+
+
     <main class="container">
         <h2 class="heading">Project portfolio</h2>
 
-        <div class="portfolio-item" id="loginpage">
-            <img src="./img/mockup1.png" alt="Mockup showing a loginpage design on a laptop placed on a bed">
-            <section>
-                <h3>Log in page</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, illo saepe? Amet sapiente, magni maiores
-                    quibusdam nam alias, quas, minus in nostrum soluta id doloremque velit inventore eum fugit
-                    consequatur.</p>
-            </section>
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+
+            <div class="carousel">
+
+                <div class="portfolio-item" id="loginpage" draggable="false">
+                    <img src="./img/mockup1.png" alt="Mockup showing a loginpage design on a laptop placed on a bed">
+                    <section>
+                        <h3>Log in page</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, illo saepe? Amet sapiente, magni
+                            maiores
+                            quibusdam nam alias, quas, minus in nostrum soluta id doloremque velit inventore eum fugit
+                            consequatur.</p>
+                    </section>
+                </div>
+
+                <div class="portfolio-item" id="vector_graphic" draggable="false">
+                    <img src="./img/mockup_vector.jpg" alt="Mockup showing vector art in a frame on a wall">
+                    <section>
+                        <h3>Vector graphic</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, illo saepe? Amet sapiente, magni
+                            maiores
+                            quibusdam nam alias, quas, minus in nostrum soluta id doloremque velit inventore eum fugit
+                            consequatur.</p>
+                    </section>
+                </div>
+
+                <div class="portfolio-item" id="sketch" draggable="false">
+                    <img src="./img/sketch.png" alt="Hand drawn sketch of plants">
+                    <section>
+                        <h3>Sketch</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, illo saepe? Amet sapiente, magni
+                            maiores
+                            quibusdam nam alias, quas, minus in nostrum soluta id doloremque velit inventore eum fugit
+                            consequatur.</p>
+                    </section>
+                </div>
+
+                <div class="portfolio-item" id="logotype" draggable="false">
+                    <img src="./img/mockup_logo.jpg" alt="Mockup image displaying logotype design">
+                    <section>
+                        <h3>Logo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, illo saepe? Amet sapiente, magni
+                            maiores
+                            quibusdam nam alias, quas, minus in nostrum soluta id doloremque velit inventore eum fugit
+                            consequatur.</p>
+                    </section>
+                </div>
+
+                <div class="portfolio-item" draggable="false">
+                    <img src="./img/placeholder.png" alt="Placeholder">
+                    <section>
+                        <h3>Empty</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, illo saepe? Amet sapiente, magni
+                            maiores
+                            quibusdam nam alias, quas, minus in nostrum soluta id doloremque velit inventore eum fugit
+                            consequatur.</p>
+                    </section>
+                </div>
+
+                <div class="portfolio-item" draggable="false">
+                    <img src="./img/placeholder.png" alt="Placeholder">
+                    <section>
+                        <h3>Empty</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, illo saepe? Amet sapiente, magni
+                            maiores
+                            quibusdam nam alias, quas, minus in nostrum soluta id doloremque velit inventore eum fugit
+                            consequatur.</p>
+                    </section>
+                </div>
+            </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+
+
         </div>
 
-        <div class="portfolio-item" id="vector_graphic">
-            <img src="./img/mockup_vector.jpg" alt="Mockup showing vector art in a frame on a wall">
-            <section>
-                <h3>Vector graphic</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, illo saepe? Amet sapiente, magni maiores
-                    quibusdam nam alias, quas, minus in nostrum soluta id doloremque velit inventore eum fugit
-                    consequatur.</p>
-            </section>
-        </div>
 
-        <div class="portfolio-item" id="sketch">
-            <img src="./img/sketch.png" alt="Hand drawn sketch of plants">
-            <section>
-                <h3>Sketch</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, illo saepe? Amet sapiente, magni maiores
-                    quibusdam nam alias, quas, minus in nostrum soluta id doloremque velit inventore eum fugit
-                    consequatur.</p>
-            </section>
-        </div>
-
-        <div class="portfolio-item" id="logotype">
-            <img src="./img/mockup_logo.jpg" alt="Mockup image displaying logotype design">
-            <section>
-                <h3>Logo</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, illo saepe? Amet sapiente, magni maiores
-                    quibusdam nam alias, quas, minus in nostrum soluta id doloremque velit inventore eum fugit
-                    consequatur.</p>
-            </section>
-        </div>
-
-        <div class="portfolio-item">
-            <img src="./img/placeholder.png" alt="Placeholder">
-            <section>
-                <h3>Empty</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, illo saepe? Amet sapiente, magni maiores
-                    quibusdam nam alias, quas, minus in nostrum soluta id doloremque velit inventore eum fugit
-                    consequatur.</p>
-            </section>
-        </div>
-
-        <div class="portfolio-item">
-            <img src="./img/placeholder.png" alt="Placeholder">
-            <section>
-                <h3>Empty</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, illo saepe? Amet sapiente, magni maiores
-                    quibusdam nam alias, quas, minus in nostrum soluta id doloremque velit inventore eum fugit
-                    consequatur.</p>
-            </section>
-        </div>
 
     </main>
 
@@ -107,6 +128,7 @@
         <a href="mailto:fakemail@nospampls.com"><i class="fa-solid fa-square-envelope"></i></a>
         <a href="https://github.com/LinneaToth"><i class="fa-brands fa-square-github"></i></a>
     </footer>
+
 
 </body>
 

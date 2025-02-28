@@ -6,18 +6,15 @@ body {
 
 .container {
     gap: var(--gap-width);
-
+    border: 1px solid green;
 }
 
 .portfolio-item {
     display: flex;
     flex-wrap: wrap;
-    flex: 1;
-    min-width: 300px;
+    min-width: 400px;
     justify-content: start;
-    /* clamp(minimum value, preferred value, maximum value)*/
-    max-height: 500px;
-    box-shadow: 5px 5px 5px var(--shadow-color);
+    border: 1px solid red;
 }
 
 .portfolio-item section {
@@ -27,16 +24,13 @@ body {
     background-color: var(--secondary-background-color);
 }
 
-
 .portfolio-item img {
     width: 100%;
     height: 50%;
     object-fit: cover;
 }
 
-/* responsive layout below */
-
-@media only screen and (max-width: 600px) {
+*/ @media only screen and (max-width: 600px) {
     .portfolio-item section {
         width: 100vw;
     }
@@ -54,3 +48,108 @@ body {
 @media only screen and (min-width: 768px) and (max-width: 1249px) {}
 
 @media screen and (min-width: 1250px) {}
+
+/* responsive layout above */
+
+
+/* One requirement for this task was to find and paste somebody elses code. BELOW is CSS for an image slider, that was copied into my project. I have worked on it to adapt it to my project. Source: https://www.codingnepalweb.com/draggable-image-slider-html-css-javascript/ */
+
+
+/* Import Google font - Poppins */
+
+.container {
+    display: flex;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.wrapper {
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    border: 1px solid blue;
+    height: 80%;
+}
+
+.wrapper i {
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: #343F4F;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+
+.wrapper i:active {
+    transform: translateY(-50%) scale(0.9);
+}
+
+.wrapper i:hover {
+    background: #f2f2f2;
+}
+
+.wrapper i:first-child {
+    left: -22px;
+    display: none;
+}
+
+.wrapper i:last-child {
+    right: -22px;
+}
+
+.wrapper .carousel {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel .dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel .dragging {
+    pointer-events: none;
+}
+
+.portfolio-item {
+    height: 340px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 3);
+    flex-shrink: 0;
+}
+
+.portfolio-item:first-child {
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+    .portfolio-item {
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .portfolio-item {
+        width: 100%;
+    }
+}
+
+/* One requirement for this task was to find and paste somebody elses code.ABOVE is an image slider, which I didn't write myself. Source: https://www.codingnepalweb.com/draggable-image-slider-html-css-javascript/ */
