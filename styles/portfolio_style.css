@@ -134,6 +134,18 @@ body {
     margin-left: 14px;
     width: calc(100% / 3);
     flex-shrink: 0;
+
+}
+
+.descriptiveText {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-bottom: 1rem;
+    font-weight: lighter;
+    color: var(--text-color);
+    /*added wordbreak and whitespace to prevent the p from overflowing the container */
+    word-break: normal;
+    white-space: normal;
 }
 
 .portfolio-item:first-child {
