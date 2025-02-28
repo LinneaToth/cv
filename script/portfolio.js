@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", async () => { //Had to make it all async, to make the slider code wait for github import
 
     const mainContainer = document.querySelector(".carousel");
+    const loadDots = document.querySelector("#loading");
 
     async function getGitHubData() {
         try {
@@ -10,41 +11,69 @@ document.addEventListener("DOMContentLoaded", async () => { //Had to make it all
             //Do something with the data here!!
 
             for (let i = gitHubData.length - 1; i >= 0; i--) { //looping backwards to make the newest repos appear first
-                const thumbnailURL = `https://raw.githubusercontent.com/LinneaToth/${gitHubData[i].name}/refs/heads/main/thumbnail.png`;
+                const htmlIcon = ["fa-brands", "fa-html5"]
+                const cssIcon = ["fa-brands", "fa-css3-alt"]
+                const jsIcon = ["fa-brands", "fa-square-js"]
 
+                const thumbnailURL = `https://raw.githubusercontent.com/LinneaToth/${gitHubData[i].name}/refs/heads/main/thumbnail.png`;
                 const description = gitHubData[i].description;
                 console.log(description);
                 const id = gitHubData[i].id;
                 const name = gitHubData[i].name;
+                const topics = gitHubData[i].topics; //Returns an array with the topics I have entered for each repo
 
-                const portfolioItem = document.createElement("div");
+                const portfolioItem = document.createElement("div"); //creates the container for each card
                 portfolioItem.draggable = "false";
                 portfolioItem.id = id;
                 portfolioItem.classList.add("portfolio-item");
 
-                const thumbnailImg = document.createElement("img");
+                const thumbnailImg = document.createElement("img"); // creates the image for each card
                 thumbnailImg.src = thumbnailURL;
                 thumbnailImg.alt = `Thumbnail image for ${name}`
 
-                const textSection = document.createElement("section");
+                const textSection = document.createElement("section"); // description text with heading for each card
                 const heading = document.createElement("h3");
                 const paragraph = document.createElement("p");
                 paragraph.classList.add("descriptiveText");
 
-                const breakPoint = description.indexOf("|") // In my repo, I have separated the intended heading from description with a | character
-                console.log(breakPoint);
+                const iconContainer = document.createElement("div"); //icons with the technologies used for each project
+                iconContainer.classList.add("iconContainer");
 
+                topics.forEach((topic) => {
+
+
+                    let icon = "";
+                    if (topic === "css") {
+                        icon = cssIcon;
+                    } else if (topic === "html5") {
+                        icon = htmlIcon;
+                    } else if (topic === "javascript") {
+                        icon = jsIcon;
+                    }
+
+                    const iconElement = document.createElement("i");
+
+                    icon.forEach((cl) => {
+                        iconElement.classList.add(cl);
+                        iconElement.title = topic;
+                    })
+
+                    iconContainer.appendChild(iconElement);
+
+                })
+
+                const breakPoint = description.indexOf("|") // In my repo, I have separated the intended heading from description with a | character
                 heading.innerText = description.slice(0, breakPoint);
                 paragraph.innerText = description.slice(breakPoint + 1);
 
-                console.log(thumbnailURL + title);
-
+                textSection.appendChild(iconContainer);
                 textSection.appendChild(heading);
                 textSection.appendChild(paragraph);
 
 
                 portfolioItem.appendChild(thumbnailImg);
                 portfolioItem.appendChild(textSection);
+
 
                 mainContainer.appendChild(portfolioItem);
 
@@ -66,7 +95,7 @@ document.addEventListener("DOMContentLoaded", async () => { //Had to make it all
 
     const carousel = document.querySelector(".carousel");
     const firstImage = carousel.querySelector(".portfolio-item");
-    const arrowIcons = document.querySelectorAll(".wrapper i");
+    const arrowIcons = document.querySelectorAll(".arrowIcon");
 
     // Variables for state management
     let isDragging = false;
@@ -145,5 +174,7 @@ document.addEventListener("DOMContentLoaded", async () => { //Had to make it all
 
 
     //One requirement for this task was to find and paste somebody elses code. ABOVE is an image slider, which I didn't write myself. Source: https://www.codingnepalweb.com/draggable-image-slider-html-css-javascript/
+
+    loadDots.remove(); //removes the loading info when all is loaded
 
 });
