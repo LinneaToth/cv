@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", async () => { //Had to make it all
                 for (const link in links) {
                     let anchorTag = document.createElement("a");
                     anchorTag.href = links[link];
-                    anchorTag.innerText = ">> " + link;
+                    anchorTag.innerText = link;
                     linkContainer.appendChild(anchorTag);
                 }
 

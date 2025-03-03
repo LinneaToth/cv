@@ -24,7 +24,7 @@ body {
 
 .portfolio-item section {
     width: 100%;
-    padding: var(--gap-width);
+    padding: 0 var(--gap-width) var(--gap-width) var(--gap-width);
     background-color: var(--secondary-background-color);
 }
 
@@ -212,10 +212,9 @@ body {
     font-size: 1rem;
     text-align: center;
     display: flex;
-    justify-content: space-between;
-    padding: 0 0 var(--gap-width) 0;
+    justify-content: space-around;
     position: relative;
-    top: -3.5rem;
+    top: -2rem;
     width: 100%;
 }
 
@@ -244,7 +243,7 @@ body {
     }
 
     .portfolio-item section {
-        width: 100vw;
+        min-width: 90vw;
     }
 
     .portfolio-item img {
