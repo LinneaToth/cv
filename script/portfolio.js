@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", async () => { //Had to make it all
                 for (const link in links) {
                     let anchorTag = document.createElement("a");
                     anchorTag.href = links[link];
-                    anchorTag.innerText = link;
+                    anchorTag.innerText = ">> " + link;
                     linkContainer.appendChild(anchorTag);
                 }
 
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", async () => { //Had to make it all
 
 
 
-    //One requirement for this task was to find and paste somebody elses code.BELOW is an image slider, which I didn't write myself. Source: https://www.codingnepalweb.com/draggable-image-slider-html-css-javascript/
+    //One requirement for this task was to find and paste somebody elses code. BELOW is an image slider, which I didn't write myself. I honestly wish I had. Integrating this has been a massive headache. Source: https://www.codingnepalweb.com/draggable-image-slider-html-css-javascript/
 
     // Select elements
 
@@ -185,9 +185,8 @@ document.addEventListener("DOMContentLoaded", async () => { //Had to make it all
     // Initial setup
     toggleArrowIcons();
 
+    //End of pasted code. One requirement for this task was to find and paste somebody elses code. ABOVE is an image slider, which I didn't write myself. Source: https://www.codingnepalweb.com/draggable-image-slider-html-css-javascript/
 
-    //One requirement for this task was to find and paste somebody elses code. ABOVE is an image slider, which I didn't write myself. Source: https://www.codingnepalweb.com/draggable-image-slider-html-css-javascript/
-
-    loadDots.remove(); //removes the loading info when all is loaded
+    loadDots.remove(); //removes the loading info when all is loaded. 
 
 });

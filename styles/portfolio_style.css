@@ -7,9 +7,6 @@ body {
 .container {
     gap: var(--gap-width);
     grid-row: 2/span 1;
-    /* align-items: center;
-    justify-content: center; */
-    border: 1px solid green;
 }
 
 
@@ -18,7 +15,6 @@ body {
     flex-direction: column;
     min-width: 300px;
     justify-content: start;
-    border: 1px solid pink;
     min-height: 70vh;
 }
 
@@ -107,27 +103,24 @@ body {
 .wrapper {
     padding-top: var(--gap-width);
     display: flex;
+    align-items: center;
     max-width: 100%;
     position: relative;
     min-height: 65vh;
-    /*KOLLA PÅ DETTA SEN*/
     flex-grow: 1;
     align-self: stretch;
-    border: 1px solid yellow;
 }
 
 .arrowIcon {
-    top: 50%;
-    height: 44px;
-    width: 44px;
+    height: 50px;
+    width: 40px;
+    padding: 10px;
     color: #343F4F;
     cursor: pointer;
     font-size: 2rem;
-    position: absolute;
     text-align: center;
     line-height: 44px;
     background: #fff;
-    border-radius: 50%;
     transform: translateY(-50%);
     transition: transform 0.1s linear;
 }
@@ -220,35 +213,32 @@ body {
 
 .linkContainer a {
     background-color: var(--main-background-color-a);
-    padding: 0 var(--gap-width);
-    border-radius: 1rem;
+    padding: 0 0.2rem;
 }
 
 .linkContainer a:hover {
-    filter: drop-shadow(0 3px 0.5rem rgba(255, 255, 255, 0.5));
+    transform: translateX(0.5rem);
 }
 
 .iconContainer i {
     padding: 0 1rem;
 }
 
-*/ @media only screen and (max-width: 600px) {
-    .portfolio-item {
-        min-height: 200vh;
-    }
+@media only screen and (max-width: 600px) {
 
-    .carousel,
     .wrapper {
-        min-height: 200vh;
+        width: 100vw;
     }
 
-    .portfolio-item section {
-        min-width: 90vw;
+    .carousel {
+        width: 1fr;
     }
 
-    .portfolio-item img {
-        width: 100%;
-        margin-right: 0;
+    .container {
+        padding: 0 0 0 0;
     }
 
+    .heading {
+        margin-left: var(--gap-width);
+    }
 }
