@@ -36,11 +36,24 @@ document.addEventListener("DOMContentLoaded", async () => { //Had to make it all
                 const paragraph = document.createElement("p");
                 paragraph.classList.add("descriptiveText");
 
+                const linkContainer = document.createElement("div"); //links for each project
+                linkContainer.classList.add("linkContainer");
+                const links = {}; //creates an object containing different links for each repo
+                links.repo = `https://github.com/LinneaToth/${gitHubData[i].name}`;
+                links.live = `https://linneatoth.github.io/${gitHubData[i].name}`;
+                links.code = `https://github.dev/LinneaToth/${gitHubData[i].name}`;
+
+                for (const link in links) {
+                    let anchorTag = document.createElement("a");
+                    anchorTag.href = links[link];
+                    anchorTag.innerText = ">> " + link;
+                    linkContainer.appendChild(anchorTag);
+                }
+
                 const iconContainer = document.createElement("div"); //icons with the technologies used for each project
                 iconContainer.classList.add("iconContainer");
 
                 topics.forEach((topic) => {
-
 
                     let icon = "";
                     if (topic === "css") {
@@ -66,10 +79,10 @@ document.addEventListener("DOMContentLoaded", async () => { //Had to make it all
                 heading.innerText = description.slice(0, breakPoint);
                 paragraph.innerText = description.slice(breakPoint + 1);
 
+                textSection.appendChild(linkContainer);
                 textSection.appendChild(iconContainer);
                 textSection.appendChild(heading);
                 textSection.appendChild(paragraph);
-
 
                 portfolioItem.appendChild(thumbnailImg);
                 portfolioItem.appendChild(textSection);

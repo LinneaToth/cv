@@ -6,20 +6,24 @@ body {
 
 .container {
     gap: var(--gap-width);
-    height: 100%;
+    grid-row: 2/span 1;
+    /* align-items: center;
+    justify-content: center; */
+    border: 1px solid green;
 }
+
 
 .portfolio-item {
     display: flex;
-    flex-wrap: wrap;
-    min-width: 400px;
-    height: 100%;
+    flex-direction: column;
+    min-width: 300px;
     justify-content: start;
+    border: 1px solid pink;
+    min-height: 70vh;
 }
 
 .portfolio-item section {
     width: 100%;
-    height: 50%;
     padding: var(--gap-width);
     background-color: var(--secondary-background-color);
 }
@@ -29,20 +33,6 @@ body {
     height: 300px;
     object-fit: cover;
 }
-
-*/ @media only screen and (max-width: 600px) {
-    .portfolio-item section {
-        width: 100vw;
-    }
-
-    .portfolio-item img {
-        width: 100%;
-        margin-right: 0;
-    }
-
-}
-
-
 
 /* below is code for loading info, when the page is waiting for the github repos */
 
@@ -113,17 +103,17 @@ body {
 /* One requirement for this task was to find and paste somebody elses code. BELOW is CSS for an image slider, that was copied into my project. I have made adjustments to adapt it to my project. Source: https://www.codingnepalweb.com/draggable-image-slider-html-css-javascript/ */
 
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .wrapper {
-    padding-top: var(--gap-width) display: flex;
+    padding-top: var(--gap-width);
+    display: flex;
     max-width: 100%;
     position: relative;
-    height: 100%;
+    min-height: 65vh;
+    /*KOLLA PÅ DETTA SEN*/
+    flex-grow: 1;
+    align-self: stretch;
+    border: 1px solid yellow;
 }
 
 .arrowIcon {
@@ -161,14 +151,10 @@ body {
 
 .wrapper .carousel {
     display: flex;
-    overflow: hidden;
-    white-space: nowrap;
-    scroll-behavior: smooth;
+    overflow-x: hidden;
     font-size: 0px;
-    overflow: hidden;
     white-space: nowrap;
     scroll-behavior: smooth;
-    height: 100%;
 }
 
 .carousel .dragging {
@@ -187,7 +173,6 @@ body {
     margin-left: 14px;
     width: calc(100% / 3);
     flex-shrink: 0;
-
 }
 
 .descriptiveText {
@@ -206,20 +191,12 @@ body {
 }
 
 
-
-
-
 @media screen and (max-width: 900px) {
     .portfolio-item {
         width: calc(100% / 2);
     }
 }
 
-@media screen and (max-width: 550px) {
-    .portfolio-item {
-        width: 100%;
-    }
-}
 
 /* One requirement for this task was to find and paste somebody elses code.ABOVE is an image slider, which I didn't write myself. Source: https://www.codingnepalweb.com/draggable-image-slider-html-css-javascript/ */
 
@@ -230,6 +207,49 @@ body {
     text-align: center;
 }
 
+.linkContainer {
+    color: var(--text-color);
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 var(--gap-width) 0;
+    position: relative;
+    top: -3.5rem;
+    width: 100%;
+}
+
+.linkContainer a {
+    background-color: var(--main-background-color-a);
+    padding: 0 var(--gap-width);
+    border-radius: 1rem;
+}
+
+.linkContainer a:hover {
+    filter: drop-shadow(0 3px 0.5rem rgba(255, 255, 255, 0.5));
+}
+
 .iconContainer i {
     padding: 0 1rem;
+}
+
+*/ @media only screen and (max-width: 600px) {
+    .portfolio-item {
+        min-height: 200vh;
+    }
+
+    .carousel,
+    .wrapper {
+        min-height: 200vh;
+    }
+
+    .portfolio-item section {
+        width: 100vw;
+    }
+
+    .portfolio-item img {
+        width: 100%;
+        margin-right: 0;
+    }
+
 }
