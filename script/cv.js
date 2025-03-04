@@ -32,7 +32,6 @@ const createContainers = (duration, title, description, type) => {
 //Loops through all of the entries added to the JSON file and uses the createContainers-function to place them in the DOM
 const typeOutCvFromJson = function (arr) {
     for (let i = 0; i < arr.length; i++) {
-        console.log(arr[i].title);
         createContainers(arr[i].duration, arr[i].title, arr[i].description, arr[i].type);
     }
 }
