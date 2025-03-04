@@ -154,10 +154,6 @@ body {
         width: 100vw;
     }
 
-    .carousel {
-        width: 1fr;
-    }
-
     .container {
         padding: 0 0 0 0;
     }
@@ -169,3 +165,5 @@ body {
     .portfolio-item {
         width: 100%;
     }
+
+}
