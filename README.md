@@ -19,57 +19,46 @@ The layout was a pre-defined prerequisite in the task we were given, as were the
 - CSS
 - Javascript
 
-## The full details of the assignment are provided below - and, aren't we lucky, it's in Swedish! 😁
+## The full details of the assignment are provided below - machine translated from Swedish, for your convenience! 
 
-> ## Instruktioner
+> ## Instructions
 > 
-> Denna uppgift går ut på att du ska koda upp en enklare webbplats från grunden med HTML och CSS. Det du ska bygga är en CV-sida för dig själva med information om dig, ditt CV, kontaktinformation och en portfolio.
+> This task builds on Task 1, where you will now develop your CV page to include JavaScript and make it more dynamic.
 > 
-> ### Vad du ska göra
+> You are only allowed to develop the page with pure JavaScript (i.e., Vanilla JavaScript).
 > 
-> Du ska bygga en enkel webbplats som följer följande kravställningar:
+> ## What You Need to Do
 > 
-> ### **Navigation**
+> Continue developing your CV page from Task 2 to meet the following requirements:
 > 
-> - Din webbplats ska bestå av några sidor som besökaren kan navigera sig mellan
-> - Du ska ha en meny där användaren kan ta sig runt till alla de olika undersidorna
-> - Det ska från alla sidorna gå att komma åt alla andra sidor
-> - Det ska synas vilken sida man är på som besökare i menyn
+> ### **CV in a file**
 > 
-> ### **Innehåll**
+> - Your education and previous workplaces should no longer be in the HTML code.
+> - The education you’ve completed and jobs you’ve had should be stored in a separate JSON file.
+> - This JSON file should be read to generate your CV.
 > 
-> - Alla sidorna på webbplatsen ska ha innehåll
-> - Innehåll som måste finnas någonstans på webbplatsen är:
->     - En presentation av dig själv
->     - Ditt CV med utbildningar, arbetsplatser m.m (precis som ett vanligt CV)
->     - En kontaktsida med enkla kontaktuppgifter som en mail eller hitta på en adress om det känns bättre. Kanske en google maps som pekar på din hemstad?
->     - En portfolio med projekt du gjort (du kan som minst lägga in skolprojekt du gjort men det kan även var annat)
-> - Det ska finnas bilder på sidan, minst en bild men gärna fler.
-> - Resterande sidor kan innehålla bara Lorem Ipsum-text eller så hittar du på något värdefullt så som kontaktuppgifter eller något annat som passar på sidan.
+> ### **Interactive Scripts**
+> 
+> - Your CV page should contain at least one interactive JavaScript element that you have written yourself. Additionally, you should integrate at least one interactive function based on an existing pure JavaScript solution (not from a library).
+>     - Examples of functions could include a modal, slideshow, scroll effects, or functions to hide/show elements.
+>     - Be sure to comment on your code to clearly indicate which parts you wrote yourself and which are based on external sources. Also, provide the source for the external code.
+>     - To find suitable scripts, you can explore resources like GitHub, CodePen, or MDN Web Docs, which offer many examples and snippets for inspiration or as a foundation for your projects.
 > 
 > ### **Portfolio**
 > 
-> - Din portfolio ska vara en listning av projekt med en rubrik och en bild. *Om du väljer att göra en modal-popup (se Extra utmaningar) kan du sätta en knapp här där besökaren kan klicka på för att få mer information.*
+> - Include a section of your page showcasing the projects you’ve built.
 > 
-> ### **Layout**
+>**Extra Challenge**
 > 
-> - Din startsida ska vara designad efter följande skiss:
->     
-> ![layout mockup](https://github.com/LinneaToth/cv/blob/main/img/layouts.png?raw=true)
->      
-> - Din sida ska ha ett eller flera typsnitt som laddas in från en typnittsfil eller från exempelvis Google Fonts.
-> - Sidan ska anpassa sig någorlunda för olika skärmstorlekar så det går att ta del av innehållet utan större problem både i en mobil och i en dator.
+> These were previously VG requirements but are now optional. However, they provide an excellent challenge and preparation for the next course.
 > 
-> ### **Tekniska krav**
+> - Expand your portfolio to fetch public projects from your own GitHub via API. Display these projects in your portfolio with names and descriptions.
+> - While fetching the projects, provide an indication that the projects are loading so the visitor doesn’t wonder why the page is initially empty.
 > 
-> - Din webbplats ska vara kompatibel med moderna webbläsare och fungera rimligt bra i alla webbläsare som inte är äldre än tre år
-> - Din HTML-kod ska vara korrekt när det kommer till semantik (ex. inte layout genom tabeller eller helt ologiska rubriknivåer) och nyttja semantiska taggar som exempelvis <nav>
-> - CSS-koden ska ligga i en separat fil
-> - Bra namngivning på engelska på alla klasser.
+> ### **Technical Requirements**
 > 
-> 👉 **Extra utmaningar (frivilligt)**
-> 
-> - När knappen för mer information klickas på ska det dyka upp en modal-popup med lite mer information om projektet. Denna ska inte kräva JavaScript utan enbart byggas med HTML & CSS.
-> - Lägg till en print-CSS som gör att utskrift av sidan blir snygg
-> - Jobba med CSS-animationer
-> - Bygg sidan i en light- och en dark-version som automatiskt slås på, enbart med CSS
+> - Validate with 0 errors on [https://validator.w3.org/](https://validator.w3.org/).
+> - No errors in the Console.
+> - The website must be technically optimized for search engines, including proper use of semantic HTML5 elements, meta tags for title and description, and optimized images for fast load times.
+
+
