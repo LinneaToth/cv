@@ -244,14 +244,14 @@ footer i:hover {
 #loadDot3 {
     width: 40px;
     height: 40px;
-    border: 1px solid white;
+    border: 1px solid var(--text-color);
     border-radius: 50%;
     animation-iteration-count: infinite;
 }
 
 @keyframes dot-animation {
     0% {
-        border: 1px solid white;
+        border: 1px solid var(--text-color);
 
     }
 
