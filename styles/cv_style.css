@@ -1,5 +1,4 @@
 /* Styles specific for the cv page */
-
 body {
     grid-template-rows: 4rem 1fr 5rem;
 }
@@ -24,31 +23,9 @@ body {
     width: 100%;
 }
 
-
-/* Responsive media query code for small screens */
-@media (max-width: 768px) {
-    .card-wrapper {
-        margin: 0 10px 25px;
-    }
-
-    .card-wrapper .swiper-slide-button {
-        display: none;
-    }
-}
-
-
-
-
 /* responsive layout below */
 
 @media only screen and (max-width: 500px) {
     .duration {
         padding-right: var(--gap-width);
     }
-
-
-    @media only screen and (min-width: 601px) and (max-width: 767px) {}
-
-    @media only screen and (min-width: 768px) and (max-width: 1249px) {}
-
-    @media screen and (min-width: 1250px) {}

@@ -46,7 +46,6 @@ body {
 }
 
 /*general text styling below*/
-
 h1,
 h2,
 h3,
@@ -71,7 +70,7 @@ h3 {
 p {
     line-height: 1.5;
     padding-bottom: 1rem;
-    font-weight: lighter;
+    font-weight: light;
     color: var(--text-color);
 }
 
@@ -85,7 +84,6 @@ a:visited {
 }
 
 /*header and navigation below*/
-
 header {
     font-family: "Cormorant Garamond", serif;
     font-size: 1.4rem;
@@ -177,7 +175,6 @@ nav {
     align-self: start;
 }
 
-
 .link {
     font-weight: 400;
     text-align: end;
@@ -194,7 +191,6 @@ nav {
 }
 
 /* footer below */
-
 footer {
     grid-column: 1/span 12;
     grid-row: -1/-2;
@@ -215,8 +211,7 @@ footer i:hover {
     filter: invert(30%);
 }
 
-/* below is code for loading info, when the page is waiting for the github repos */
-
+/* below is code for loading info & animation, which will show while the page is waiting for the github repos */
 #loading {
     height: 80vh;
     width: 100vw;
@@ -243,7 +238,6 @@ footer i:hover {
     width: 100%;
     margin-bottom: 2rem;
     gap: 1rem;
-
 }
 
 #loadDot1,
@@ -285,12 +279,7 @@ footer i:hover {
     animation-name: dot-animation;
 }
 
-
-/* above is code for loading info, when the page is waiting for the github repos */
-
-
 /* responsive layout below */
-
 @media only screen and (max-width: 600px) {
     body {
         width: 100vw;
