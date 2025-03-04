@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", async () => { //Had to make it all
                 card.appendChild(heading);
                 card.appendChild(link);
                 cardWrapper.appendChild(card);
+
             }
 
         } catch (error) {
@@ -49,6 +50,8 @@ document.addEventListener("DOMContentLoaded", async () => { //Had to make it all
     }
 
     await getGitHubData(); //The removal of loading dots needs to await content from GitHub
+
     loadDots.remove(); //Removes the loading screen
 
 })
+
