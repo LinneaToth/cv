@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F25D-Uppgift 2 - Skapa CV-sida</title>
+    <meta name="description" content="Personal web site for web developer Linnéa Toth">
+    <title>Linnéa Toth - Personal web site</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/index_style.css">
-    <link rel="stylesheet" href="./styles/print_style.css">
 
     <!-- fonts: -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +42,7 @@
         <i class="menu-toggle-btn fa-solid fa-bars" title="Menu icon"> </i>
     </header>
 
-    <figure id="portrait"></figure>
+    <figure id="portrait" title="A cartoon style portrait"></figure>
     <article id="profile-text">
         <h2>Hi there!</h2>
         <p>This site is a school assignment from our first course in the front end / web dev education I am taking. It
@@ -56,45 +57,24 @@
 
 
     <div class="card-wrapper">
-        <!-- <article class="project-card">
-            <h3>Login page</h3>
-            <a href="./portfolio.html#login">
-                <p>>> see more</p>
-            </a>
-
-
-        </article>
-        <article class="project-card">
-            <h3>Vector graphic</h3>
-            <a href="./portfolio.html#vector">
-                <p>>> see more</p>
-            </a>
-
-
-        </article>
-        <article class="project-card">
-            <h3>Sketch</h3>
-            <a href="./portfolio.html#sketch">
-                <p>>> see more</p>
-            </a>
-
-        </article>
-        <article class="project-card">
-            <h3>Logotype</h3>
-            <a href="./portfolio.html#logotype">
-                <p>>> see more</p>
-            </a> -->
-
-        </article>
+        <!-- the script will inject content (cards with thumbnails from the four latest repos) here -->
     </div>
 
 
     <footer>
-        <a href="https://www.linkedin.com/in/linneatoth/"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="mailto:fakemail@nospampls.com"><i class="fa-solid fa-square-envelope"></i></a>
-        <a href="https://github.com/LinneaToth"><i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.linkedin.com/in/linneatoth/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:fakemail@nospampls.com" title="E-mail"><i class="fa-solid fa-square-envelope"></i></a>
+        <a href="https://github.com/LinneaToth" title="GitHub"><i class="fa-brands fa-square-github"></i></a>
     </footer>
 
+    <div id="loading-index"><!-- loading screen, while waiting for external data to load -->
+        <div id="loadDots">
+            <div id="loadDot1"></div>
+            <div id="loadDot2"></div>
+            <div id="loadDot3"></div>
+        </div>
+        <h3>WAITING FOR PROJECTS TO LOAD...</h3>
+    </div>
 
 </body>
 

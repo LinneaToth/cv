@@ -11,8 +11,9 @@ const createContainers = (duration, title, description, type) => {
     let article = document.createElement("article");
     let heading = document.createElement("h3");
     let paragraph = document.createElement("p");
-    let targetContainer = type === "work" ? workExperienceContainer : eduExperienceContainer; //Ternary operator
+    let targetContainer = type === "work" ? workExperienceContainer : eduExperienceContainer; //Ternary operator. If it's a work experience, the target container is the work one. Otherwise it would be an educational experience, to be added to the list of educations.
 
+    //Assigning classes and content to the elements
     article.classList.add("experience");
     divDuration.classList.add("duration");
     divDuration.innerText = duration;
@@ -28,7 +29,7 @@ const createContainers = (duration, title, description, type) => {
     targetContainer.appendChild(article);
 }
 
-//Loops through all of the entries and uses the createContainers-function to place them in the DOM
+//Loops through all of the entries added to the JSON file and uses the createContainers-function to place them in the DOM
 const typeOutCvFromJson = function (arr) {
     for (let i = 0; i < arr.length; i++) {
         console.log(arr[i].title);
