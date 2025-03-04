@@ -35,7 +35,6 @@ body {
 /* One requirement for this task was to find and paste somebody elses code. BELOW is CSS for an image slider, that was copied into my project. I have made adjustments to adapt it to my project. Source: https://www.codingnepalweb.com/draggable-image-slider-html-css-javascript/ */
 
 
-
 .wrapper {
     padding-top: var(--gap-width);
     display: flex;
@@ -87,14 +86,14 @@ body {
     min-height: 600px;
 }
 
-.carousel .dragging {
+/* .carousel .dragging {
     cursor: grab;
     scroll-behavior: auto;
 }
 
 .carousel .dragging {
     pointer-events: none;
-}
+} */
 
 .portfolio-item {
     height: 340px;
