@@ -1,4 +1,6 @@
 
+//Everything in this file is written by me
+
 const workExperienceContainer = document.querySelector("#work-experience");
 const eduExperienceContainer = document.querySelector("#edu-experience");
 
@@ -48,5 +50,3 @@ async function fetchMyExperienceData() {
 }
 
 fetchMyExperienceData()
-
-//https://glidejs.com/docs/setup/

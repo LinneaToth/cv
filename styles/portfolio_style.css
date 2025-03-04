@@ -20,6 +20,7 @@ body {
 
 .portfolio-item section {
     width: 100%;
+    min-height: 300px;
     padding: 0 var(--gap-width) var(--gap-width) var(--gap-width);
     background-color: var(--secondary-background-color);
 }
@@ -29,71 +30,6 @@ body {
     height: 300px;
     object-fit: cover;
 }
-
-/* below is code for loading info, when the page is waiting for the github repos */
-
-#loading {
-    height: 80vh;
-    width: 100vw;
-    position: absolute;
-    top: 4rem;
-    text-align: center;
-    align-content: center;
-    background-color: rgba(255, 255, 255, 0.9);
-    z-index: 10000;
-}
-
-#loadDots {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 2rem;
-    gap: 1rem;
-
-}
-
-#loadDot1,
-#loadDot2,
-#loadDot3 {
-    width: 40px;
-    height: 40px;
-    border: 1px solid white;
-    border-radius: 50%;
-    animation-iteration-count: infinite;
-}
-
-@keyframes dot-animation {
-    0% {
-        border: 1px solid white;
-
-    }
-
-    100% {
-        border: 1px solid var(--text-color);
-    }
-}
-
-#loadDot1 {
-    animation-delay: 0s;
-    animation-duration: 1s;
-    animation-name: dot-animation;
-}
-
-#loadDot2 {
-    animation-delay: 0.25s;
-    animation-duration: 1s;
-    animation-name: dot-animation;
-}
-
-#loadDot3 {
-    animation-delay: 0.5s;
-    animation-duration: 1s;
-    animation-name: dot-animation;
-}
-
-
-/* above is code for loading info, when the page is waiting for the github repos */
-
 
 
 /* One requirement for this task was to find and paste somebody elses code. BELOW is CSS for an image slider, that was copied into my project. I have made adjustments to adapt it to my project. Source: https://www.codingnepalweb.com/draggable-image-slider-html-css-javascript/ */
@@ -115,12 +51,12 @@ body {
     height: 50px;
     width: 40px;
     padding: 10px;
-    color: #343F4F;
+    color: var(--text-color);
     cursor: pointer;
     font-size: 2rem;
     text-align: center;
     line-height: 44px;
-    background: #fff;
+    /* background: var(--main-background-color-a); */
     transform: translateY(-50%);
     transition: transform 0.1s linear;
 }
@@ -135,7 +71,7 @@ body {
 
 .arrowIcon:first-child {
     left: -50px;
-    display: none;
+    /* display: none; */
 }
 
 .arrowIcon:last-child {
@@ -148,6 +84,7 @@ body {
     font-size: 0px;
     white-space: nowrap;
     scroll-behavior: smooth;
+    min-height: 600px;
 }
 
 .carousel .dragging {
@@ -194,6 +131,7 @@ body {
 /* One requirement for this task was to find and paste somebody elses code.ABOVE is an image slider, which I didn't write myself. Source: https://www.codingnepalweb.com/draggable-image-slider-html-css-javascript/ */
 
 .iconContainer {
+    /*The icons showing which technologies are being used for each project */
     color: var(--text-color);
     font-size: 2rem;
     height: 3.5rem;
@@ -201,6 +139,7 @@ body {
 }
 
 .linkContainer {
+    /*Links to repo / live / code for each project */
     color: var(--text-color);
     font-size: 1rem;
     text-align: center;

@@ -1,6 +1,8 @@
-document.addEventListener("DOMContentLoaded", () => {
+//Everything in this file is written by me
 
+document.addEventListener("DOMContentLoaded", async () => {
 
+    const loadDots = document.querySelector("#loading-index");
 
     async function getGitHubData() {
         try {
@@ -39,6 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    getGitHubData();
+    await getGitHubData(); //The removal of loading dots needs to await content from GitHub
+
+    loadDots.remove();
 
 })

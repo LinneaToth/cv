@@ -215,6 +215,79 @@ footer i:hover {
     filter: invert(30%);
 }
 
+/* below is code for loading info, when the page is waiting for the github repos */
+
+#loading {
+    height: 80vh;
+    width: 100vw;
+    position: absolute;
+    top: 4rem;
+    text-align: center;
+    align-content: center;
+    background-color: var(--main-background-color-a);
+    z-index: 10000;
+}
+
+#loading-index {
+    grid-column: 2/-2;
+    grid-row: 4/span 1;
+    text-align: center;
+    align-content: center;
+    background-color: var(--main-background-color-a);
+    z-index: 10000;
+}
+
+#loadDots {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    gap: 1rem;
+
+}
+
+#loadDot1,
+#loadDot2,
+#loadDot3 {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dot-animation {
+    0% {
+        border: 1px solid white;
+
+    }
+
+    100% {
+        border: 1px solid var(--main-background-color-a);
+    }
+}
+
+#loadDot1 {
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-name: dot-animation;
+}
+
+#loadDot2 {
+    animation-delay: 0.25s;
+    animation-duration: 1s;
+    animation-name: dot-animation;
+}
+
+#loadDot3 {
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-name: dot-animation;
+}
+
+
+/* above is code for loading info, when the page is waiting for the github repos */
+
 
 /* responsive layout below */
 
