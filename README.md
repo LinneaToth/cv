@@ -5,6 +5,8 @@
 Webpage for our second school assignment in front end / web dev education. Built, by yours truly, with HTML, CSS and JavaScript to facilitate for dynamic content and interactivity. 
 The layout was a pre-defined prerequisite in the task we were given, as were the general contents. 
 
+ ![layout mockup](https://github.com/LinneaToth/cv/blob/main/img/preview.png)
+
 ## Features:
 
 - Dynamic content from GitHub API and local JSON file
@@ -21,9 +23,6 @@ The layout was a pre-defined prerequisite in the task we were given, as were the
 - HTML 5
 - CSS
 - Javascript
-
- ![layout mockup](https://github.com/LinneaToth/cv/blob/main/img/preview.png)
-
 
 ## The full details of the assignment are provided below - machine translated from Swedish, for your convenience! 
 
