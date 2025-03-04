@@ -1,14 +1,17 @@
 # Personal site
 
-Webpage for our second school assignment in front end / web dev education. Built with HTML and CSS, with a sprinkle of JavaScript to facilitate for a hamburger menu. 
-The layout was a pre-defined prerequisite in the task we were given, as were the general contents. 
+[Live page](https://linneatoth.github.io/cv)
 
- ![layout mockup](https://github.com/LinneaToth/cv/blob/main/img/preview.png)
+Webpage for our second school assignment in front end / web dev education. Built, by yours truly, with HTML, CSS and JavaScript to facilitate for dynamic content and interactivity. 
+The layout was a pre-defined prerequisite in the task we were given, as were the general contents. 
 
 ## Features:
 
+- Dynamic content from GitHub API and local JSON file
+- Interactive elements
 - Responsive layout
 - CSS transitions
+- CSS animations
 - Dark mode
 - W3C validated
 - Semantic markup
@@ -18,6 +21,9 @@ The layout was a pre-defined prerequisite in the task we were given, as were the
 - HTML 5
 - CSS
 - Javascript
+
+ ![layout mockup](https://github.com/LinneaToth/cv/blob/main/img/preview.png)
+
 
 ## The full details of the assignment are provided below - machine translated from Swedish, for your convenience! 
 
