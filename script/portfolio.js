@@ -9,11 +9,11 @@ document.addEventListener("DOMContentLoaded", async () => { //Had to make it all
     //Massive function that gets data from github and turns it into project cards on the portfolio page
     async function getGitHubData() {
         try {
-            const response = await fetch("https://api.github.com/users/linneatoth/repos");
+            const response = await fetch("https://api.github.com/users/linneatoth/repos?sort=created&direction=desc"); //query added to get the latest repos first
             const gitHubData = await response.json();
 
             //Looping through all of the repos to create cards for each
-            for (let i = gitHubData.length - 1; i >= 0; i--) { //looping backwards to make the newest repos appear first
+            for (let i = 0; i < gitHubData.length; i++) {
                 const id = gitHubData[i].id; //Repo ID
                 const name = gitHubData[i].name; //Repo name
 

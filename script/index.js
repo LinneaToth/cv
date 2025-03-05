@@ -11,11 +11,11 @@ document.addEventListener("DOMContentLoaded", async () => { //Had to make it all
             const cardWrapper = document.querySelector(".card-wrapper");
 
             //Fetching data from github 
-            const response = await fetch("https://api.github.com/users/linneatoth/repos");
+            const response = await fetch("https://api.github.com/users/linneatoth/repos?sort=created&direction=desc"); //query added to sort latest first
             const gitHubData = await response.json();
 
-            //Creation of project cards
-            for (let i = gitHubData.length - 1; i >= gitHubData.length - 4; i--) { //looping backwards to make the four latest added repos appear first
+            //Creation of four project cards with the latest repos
+            for (let i = 0; i < 4; i++) {
 
                 //Text content 
                 const description = gitHubData[i].description; //Description from github
