@@ -14,10 +14,10 @@ document.addEventListener("DOMContentLoaded", async () => { //Had to make it all
 
             //Looping through all of the repos to create cards for each
             for (let i = 0; i < gitHubData.length; i++) {
-                if (gitHubData[i].topics.includes("nofolio"){
+                if (gitHubData[i].topics.includes("nofolio")) {
                     continue;
                 }
-                
+
                 const id = gitHubData[i].id; //Repo ID
                 const name = gitHubData[i].name; //Repo name
 
@@ -54,8 +54,12 @@ document.addEventListener("DOMContentLoaded", async () => { //Had to make it all
 
                 //Variables for icons representing different technologies,two classes are needed for these fontawesome icons; that is what is represented in the arrays
                 const htmlIcon = ["fa-brands", "fa-html5"]
-                const cssIcon = ["fa-brands", "fa-css3-alt"]
+                const cssIcon = ["fa-brands", "fa-css"]
                 const jsIcon = ["fa-brands", "fa-square-js"]
+                const sassIcon = ["fa-brands", "fa-sass"]
+                const reactIcon = ["fa-brands", "fa-react"]
+                const apiIcon = ["fa-solid", "fa-server"]
+                const twIcon = ["fa-solid", "fa-t"]
 
                 //Creating container div for the icons
                 const iconContainer = document.createElement("div");
@@ -70,6 +74,14 @@ document.addEventListener("DOMContentLoaded", async () => { //Had to make it all
                         icon = htmlIcon;
                     } else if (topic === "javascript") {
                         icon = jsIcon;
+                    } else if (topic === "sass") {
+                        icon = sassIcon;
+                    } else if (topic === "react") {
+                        icon = reactIcon;
+                    } else if (topic === "api") {
+                        icon = apiIcon;
+                    } else if (topic === "tailwind") {
+                        icon = twIcon;
                     } else {
                         return; //Skip unrecognized topics
                     }

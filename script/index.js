@@ -15,8 +15,13 @@ document.addEventListener("DOMContentLoaded", async () => { //Had to make it all
             const gitHubData = await response.json();
 
             //Creation of four project cards with the latest repos
-            for (let i = 0; i < 4; i++) {
-
+            let count = 0; //card count
+            let i = 0; //git hub data array index
+            while (count < 4) {
+                if (gitHubData[i].topics.includes("nofolio")) {
+                    i++
+                    continue;
+                }
                 //Text content 
                 const description = gitHubData[i].description; //Description from github
                 const breakPoint = description.indexOf("|") // In my repo, I have separated the intended heading from description with a | character
@@ -41,7 +46,8 @@ document.addEventListener("DOMContentLoaded", async () => { //Had to make it all
                 card.appendChild(heading);
                 card.appendChild(link);
                 cardWrapper.appendChild(card);
-
+                i++;
+                count++;
             }
 
         } catch (error) {
