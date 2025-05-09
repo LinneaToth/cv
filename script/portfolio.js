@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded", async () => { //Had to make it all
 
             //Looping through all of the repos to create cards for each
             for (let i = 0; i < gitHubData.length; i++) {
+                if (gitHubData[i].topics.includes("nofolio"){
+                    continue;
+                }
+                
                 const id = gitHubData[i].id; //Repo ID
                 const name = gitHubData[i].name; //Repo name
 
